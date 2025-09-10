@@ -304,17 +304,17 @@ a {
 /* Social links in team cards */
 .team-socials {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  justify-content: center; /* вирівнювання по центру */
+  gap: 24px;               /* відступи між іконками */
   margin-top: 8px;
 }
 
-.team-socials li {
+.social-item {
   width: 40px;
   height: 40px;
 }
 
-.team-socials a {
+.social-link {
   width: 100%;
   height: 100%;
   background-color: var(--social-bg);
@@ -325,16 +325,17 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-socials a:hover,
-.team-socials a:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: #404bbf;
 }
 
-.team-socials svg {
+.social-icon {
   width: 16px;
   height: 16px;
-  fill: var(--icon-fill);
+  fill: var(--icon-fill); /* ✅ іконки через css-змінну */
 }
+
 
 /* ====== Portfolio (Section 4) ====== */
 .portfolio {
