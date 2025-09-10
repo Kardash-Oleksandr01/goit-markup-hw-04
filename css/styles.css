@@ -220,15 +220,17 @@ a {
   width: calc((100% - 72px) / 4); 
 }
 
-.feature-icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  margin-bottom: 8px;
+
+
+.feature-icon {
+  display: flex;                 /* для можливості зміни розташування */
+  align-items: center;           /* вирівнювання іконки по вертикалі */
+  justify-content: center;       /* вирівнювання іконки по горизонталі */
+  height: 112px;                 /* висота блоку */
+  background-color: #f4f4fd;     /* колір фону */
+  border-radius: 4px;            /* закруглення кутів */
+  border: 1px solid #8e8f99;     /* рамка */
+  margin-bottom: 8px;            /* відступ від заголовка */
 }
 
 .feature-title {
@@ -404,6 +406,39 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+/* ====== Footer ====== */
+.site-footer {
+  padding: 100px 0;
+  background-color: #2e2f42;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-info {
+  margin-right: 120px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.site-footer .logo-part {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  max-width: 264px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
 
 /* ====== Footer ====== */
