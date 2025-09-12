@@ -327,24 +327,18 @@ a {
 }
 
 
-/* Наведення мишкою */
+
 .social-link:hover {
   background-color: #404bbf;
-  color: #ffffff;
+
 }
 
-/* Фокус з клавіатури */
+
 .social-link:focus {
-  outline: 2px solid #404bbf; /* видимий фокус */
-  outline-offset: 2px;
-  background-color: #404bbf;
-  color: #ffffff;
-}
 
-/* Клік */
-.social-link:active {
-  background-color: #3038a0;
-  color: #ffffff;
+  background-color: #404bbf;
+  outline: 2px solid #404bbf; /* робить фокус видимим */
+  outline-offset: 2px;
 }
 
 
