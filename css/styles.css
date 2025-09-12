@@ -314,10 +314,11 @@ a {
   height: 40px;
 }
 
+/* Social links */
 .social-link {
-  width: 100%;
-  height: 100%;
-  background-color: #e0e0f0; /* замість var(--social-bg) для сумісності */
+  width: 40px;
+  height: 40px;
+  background-color: #e0e0f0;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -325,7 +326,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Виправлення: зміна кольору при наведенні, фокусі та кліку */
+
 .social-link:hover,
 .social-link:focus,
 .social-link:active {
@@ -335,8 +336,9 @@ a {
 .social-icon {
   width: 16px;
   height: 16px;
-  fill: #fff; /* замість var(--icon-fill) для сумісності */
+  fill: #fff;
 }
+
 
 
 
