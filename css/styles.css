@@ -250,12 +250,12 @@ a {
 
 /* ====== Team (Section 3) ====== */
 .team {
-  padding: 120px 0;        
+  padding: 120px 0;
   background-color: #f4f4fd;
 }
 
 .section-title {
-  margin-bottom: 72px;     
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -270,9 +270,9 @@ a {
 }
 
 .team-item {
-  width: calc((100% - 72px) / 4);            
+  width: calc((100% - 72px) / 4);
   background-color: #fff;
-  border-radius: 0 0 4px 4px;                
+  border-radius: 0 0 4px 4px;
   overflow: hidden;
   box-shadow: 0px 1px 6px rgba(46,47,66,0.08),
               0px 1px 1px rgba(46,47,66,0.16),
@@ -284,8 +284,8 @@ a {
 }
 
 .team-name {
-  text-align: center;                          
-  margin: 0 0 8px;                             
+  text-align: center;
+  margin: 0 0 8px;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
@@ -294,7 +294,7 @@ a {
 }
 
 .team-role {
-  text-align: center;                          
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -304,8 +304,8 @@ a {
 /* Social links in team cards */
 .team-socials {
   display: flex;
-  justify-content: center; /* вирівнювання по центру */
-  gap: 24px;               /* відступи між іконками */
+  justify-content: center;
+  gap: 24px;
   margin-top: 8px;
 }
 
@@ -317,7 +317,7 @@ a {
 .social-link {
   width: 100%;
   height: 100%;
-  background-color: var(--social-bg);
+  background-color: #e0e0f0; /* замість var(--social-bg) для сумісності */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -325,16 +325,19 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Виправлення: зміна кольору при наведенні, фокусі та кліку */
 .social-link:hover,
-.social-link:focus {
+.social-link:focus,
+.social-link:active {
   background-color: #404bbf;
 }
 
 .social-icon {
   width: 16px;
   height: 16px;
-  fill: var(--icon-fill); /* ✅ іконки через css-змінну */
+  fill: #fff; /* замість var(--icon-fill) для сумісності */
 }
+
 
 
 /* ====== Portfolio (Section 4) ====== */
@@ -457,7 +460,7 @@ a {
 
 .social-list {
   display: flex;
-  gap: 16px;
+  gap: 16px; /* відстань між іконками */
 }
 
 .social-item {
@@ -483,4 +486,6 @@ a {
 
 .social-icon {
   fill: var(--cloud, #f4f4fd);
+  width: 24px;
+  height: 24px;
 }
