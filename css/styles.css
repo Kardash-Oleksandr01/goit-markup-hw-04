@@ -339,8 +339,14 @@ a {
   outline-offset: 2px;
   background-color: #404bbf;
   color: #ffffff;
-
 }
+
+/* Клік */
+.social-link:active {
+  background-color: #3038a0;
+  color: #ffffff;
+}
+
 
 
 .social-icon {
