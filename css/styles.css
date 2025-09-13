@@ -108,6 +108,7 @@ a {
 }
 
 .nav-link {
+  display: block;
   padding: 24px 0;         
   font-weight: 500;
   line-height: 1.5;
@@ -166,8 +167,10 @@ a {
   text-align: center;
 
   background-image: linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
-                    url("../images/hero-bg.jpg");
-  max-width: 1440px;
+                    url(../images/people-office.png);
+  max-width: 100%;
+  width: 100%;
+  max-width: 100%; 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
